@@ -1,0 +1,7 @@
+[
+    {
+        "name": "sbc-8x-imx8",
+        "toolchainFile": "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/cortexa35-dey-linux-toolchain.cmake",
+        "environmentSetupScript" : "/opt/dey/4.0-r4/ccimx8x-sbc-pro/environment-setup-cortexa35-dey-linux"
+    }
+]

@@ -1,0 +1,432 @@
+The target system is: Linux -  - aarch64
+The host system is: Linux - 6.5.0-15-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-gcc 
+Build flags: ;-mcpu=cortex-a35;-march=armv8-a+crc+crypto;-mbranch-protection=standard
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/abel/workspace/mqtt-manager/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-g++ 
+Build flags: ;-mcpu=cortex-a35;-march=armv8-a+crc+crypto;-mbranch-protection=standard
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/abel/workspace/mqtt-manager/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/abel/workspace/mqtt-manager/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/bin/ninja cmTC_6c328 && [1/2] Building C object CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o
+Using built-in specs.
+COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-gcc
+Target: aarch64-dey-linux
+Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c328.dir/'
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/cc1 -quiet -v -isysroot /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6c328.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-a35 -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -version -o /tmp/ccD8gOb9.s
+GNU C17 (GCC) version 11.4.0 (aarch64-dey-linux)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/local/include"
+ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/../../../../../aarch64-dey-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/
+End of search list.
+GNU C17 (GCC) version 11.4.0 (aarch64-dey-linux)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: dc719979d5e5f1612413e9ebee3f628e
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c328.dir/'
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/as -v -EL -march=armv8-a+crc+crypto -march=armv8-a+crc -mabi=lp64 -o CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o /tmp/ccD8gOb9.s
+GNU assembler version 2.38 (aarch64-dey-linux) using BFD version (GNU Binutils) 2.38.20220708
+COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/
+LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_6c328
+Using built-in specs.
+COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-gcc
+COLLECT_LTO_WRAPPER=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper
+Target: aarch64-dey-linux
+Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (GCC) 
+COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/
+LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-rdynamic' '-o' 'cmTC_6c328' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_6c328.'
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/collect2 -plugin /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/liblto_plugin.so -plugin-opt=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cccpjUz3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_6c328 /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-rdynamic' '-o' 'cmTC_6c328' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_6c328.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/]
+  end of search list found
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include]
+  implicit include dirs: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-dey-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/abel/workspace/mqtt-manager/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/bin/ninja cmTC_6c328 && [1/2] Building C object CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-gcc]
+  ignore line: [Target: aarch64-dey-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c328.dir/']
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/cc1 -quiet -v -isysroot /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6c328.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-a35 -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -version -o /tmp/ccD8gOb9.s]
+  ignore line: [GNU C17 (GCC) version 11.4.0 (aarch64-dey-linux)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/../../../../../aarch64-dey-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.4.0 (aarch64-dey-linux)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: dc719979d5e5f1612413e9ebee3f628e]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c328.dir/']
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/as -v -EL -march=armv8-a+crc+crypto -march=armv8-a+crc -mabi=lp64 -o CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o /tmp/ccD8gOb9.s]
+  ignore line: [GNU assembler version 2.38 (aarch64-dey-linux) using BFD version (GNU Binutils) 2.38.20220708]
+  ignore line: [COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/]
+  ignore line: [LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_6c328]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper]
+  ignore line: [Target: aarch64-dey-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/]
+  ignore line: [LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-rdynamic' '-o' 'cmTC_6c328' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_6c328.']
+  link line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/collect2 -plugin /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/liblto_plugin.so -plugin-opt=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cccpjUz3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_6c328 /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cccpjUz3.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_6c328] ==> ignore
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_6c328.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crti.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/lib]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crti.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+  implicit dirs: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/lib;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/abel/workspace/mqtt-manager/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/bin/ninja cmTC_08d4b && [1/2] Building CXX object CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o
+Using built-in specs.
+COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-g++
+Target: aarch64-dey-linux
+Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08d4b.dir/'
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/cc1plus -quiet -v -isysroot /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_08d4b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a35 -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -version -o /tmp/ccGWJuly.s
+GNU C++17 (GCC) version 11.4.0 (aarch64-dey-linux)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/local/include"
+ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/../../../../../aarch64-dey-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/aarch64-dey-linux
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/backward
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/
+End of search list.
+GNU C++17 (GCC) version 11.4.0 (aarch64-dey-linux)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 4e1386d29f9101cb96d9e9fc82711ea1
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08d4b.dir/'
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/as -v -EL -march=armv8-a+crc+crypto -march=armv8-a+crc -mabi=lp64 -o CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGWJuly.s
+GNU assembler version 2.38 (aarch64-dey-linux) using BFD version (GNU Binutils) 2.38.20220708
+COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/
+LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_08d4b
+Using built-in specs.
+COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-g++
+COLLECT_LTO_WRAPPER=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper
+Target: aarch64-dey-linux
+Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (GCC) 
+COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/
+LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-rdynamic' '-o' 'cmTC_08d4b' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_08d4b.'
+ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/collect2 -plugin /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/liblto_plugin.so -plugin-opt=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIkvLoE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_08d4b /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-rdynamic' '-o' 'cmTC_08d4b' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_08d4b.'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/aarch64-dey-linux]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/backward]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed]
+    add: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/]
+  end of search list found
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/aarch64-dey-linux] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/aarch64-dey-linux]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/backward] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/backward]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed]
+  collapse include dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include]
+  implicit include dirs: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/aarch64-dey-linux;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/backward;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-dey-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/abel/workspace/mqtt-manager/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/bin/ninja cmTC_08d4b && [1/2] Building CXX object CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-g++]
+  ignore line: [Target: aarch64-dey-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08d4b.dir/']
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/cc1plus -quiet -v -isysroot /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_08d4b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a35 -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -version -o /tmp/ccGWJuly.s]
+  ignore line: [GNU C++17 (GCC) version 11.4.0 (aarch64-dey-linux)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/../../../../../aarch64-dey-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/aarch64-dey-linux]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/c++/11.4.0/backward]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/include]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/include-fixed]
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/include/]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.4.0 (aarch64-dey-linux)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 4e1386d29f9101cb96d9e9fc82711ea1]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08d4b.dir/']
+  ignore line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/as -v -EL -march=armv8-a+crc+crypto -march=armv8-a+crc -mabi=lp64 -o CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGWJuly.s]
+  ignore line: [GNU assembler version 2.38 (aarch64-dey-linux) using BFD version (GNU Binutils) 2.38.20220708]
+  ignore line: [COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/]
+  ignore line: [LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-o' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_08d4b]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper]
+  ignore line: [Target: aarch64-dey-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-11.4.0-r0/gcc-11.4.0/configure --build=x86_64-linux --host=x86_64-deysdk-linux --target=aarch64-dey-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-deysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-dey-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/11.4.0 --with-build-time-tools=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot-native/usr/aarch64-dey-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/abel/workspace/ccimx8x-sbc-pro/tmp/work/x86_64-nativesdk-deysdk-linux/gcc-cross-canadian-aarch64/11.4.0-r0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/]
+  ignore line: [LIBRARY_PATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/:/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a35' '-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-v' '-rdynamic' '-o' 'cmTC_08d4b' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_08d4b.']
+  link line: [ /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/collect2 -plugin /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/liblto_plugin.so -plugin-opt=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIkvLoE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_08d4b /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0 -L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o /opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/libexec/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccIkvLoE.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_08d4b] ==> ignore
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0]
+    arg [-L/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib] ==> dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_08d4b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o]
+    arg [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o] ==> obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crti.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crti.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o]
+  collapse obj [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/crtn.o] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/lib] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/lib]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0]
+  collapse library dir [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/../../../../../sysroots/cortexa35-dey-linux/usr/lib] ==> [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/Scrt1.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crti.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtbeginS.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0/crtendS.o;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/crtn.o]
+  implicit dirs: [/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/lib/aarch64-dey-linux/gcc/aarch64-dey-linux/11.4.0;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/lib;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib/aarch64-dey-linux/11.4.0;/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/cortexa35-dey-linux/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/abel/workspace/mqtt-manager/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/bin/ninja cmTC_74cc1 && [1/2] Building C object CMakeFiles/cmTC_74cc1.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_74cc1
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/abel/workspace/mqtt-manager/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/bin/ninja cmTC_68579 && [1/2] Building C object CMakeFiles/cmTC_68579.dir/src.c.o
+[2/2] Linking C executable cmTC_68579
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
