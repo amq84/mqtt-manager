@@ -1,3 +1,5 @@
 # ninja log v5
 0	6753	1707580122059267610	CMakeFiles/mqtt-manager.dir/src/main.cpp.o	94c7fe2869e2cce2
 6790	7110	1707580122419268069	libmqtt-manager.a	62fa3eca3c9dc528
+0	280	1707678876435589510	CMakeFiles/mqtt-manager.dir/src/MQTTManager.cpp.o	18649ee3284b1588
+280	2552	1707678878695615634	libmqtt-manager.so	ed3dd14e1970fe9f

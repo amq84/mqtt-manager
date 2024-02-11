@@ -197,7 +197,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/bin/aarch64-dey-linux/aarch64-dey-linux-strip
 
-//The CMake toolchain file
+//No help, variable specified on the command line.
 CMAKE_TOOLCHAIN_FILE:FILEPATH=/opt/dey/4.0-r4/ccimx8x-sbc-pro/sysroots/x86_64-deysdk-linux/usr/share/cmake/cortexa35-dey-linux-toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
