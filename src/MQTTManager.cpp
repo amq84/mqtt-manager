@@ -11,10 +11,12 @@
 #include "MQTTManager.hpp"
 
 using namespace MQTTMANAGER;
+using namespace boost::json;
 
 MQTTManager::MQTTManager()
 {
     _run = std::async(std::launch::async, &MQTTManager::run, this);
+    
 }
 
 MQTTManager::~MQTTManager()
@@ -30,7 +32,7 @@ int MQTTManager::run()
 
     while(true)
     {
-
+        std::this_thread::sleep_for(2000ms);
     }
 }
 
@@ -46,11 +48,37 @@ void MQTTManager::disconnect()
 
 bool MQTTManager::_parse_cfgfile()
 {
-    std::string data;
+    
     std::string homedir(getpwuid(getuid())->pw_dir);
     std::string relativeLocation("/.config/mqtt-manager/");
     std::string fileName("mqtt-manager-configurator.json");
-    _cfgfile = std::move(std::ifstream((homedir+relativeLocation+fileName)));
 
-    return true;
+    std::ifstream ifs{(homedir+relativeLocation+fileName)};
+    if(ifs)
+    {
+        std::string data((std::istreambuf_iterator<char>(ifs)), std::istreambuf_iterator<char>());
+        value dataJson = parse(data.c_str());
+        kind k = dataJson.kind();
+        auto const& obj = dataJson.get_object();
+        if(! obj.empty())
+        {
+            auto it = obj.begin();
+            for(;;)
+            {
+                
+                //std::cout << *indent << json::serialize(it->key()) << " : ";
+                //pretty_print(os, it->value(), indent);
+                if(++it == obj.end())
+                    break;
+                //os << ",\n";
+            }
+        }
+
+        return true;
+    }else
+    {
+        printf("File not found! \n\r");
+        return false;
+    }
+    
 }

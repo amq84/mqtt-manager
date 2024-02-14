@@ -60,6 +60,10 @@
         "iomanip": "cpp",
         "shared_mutex": "cpp",
         "iostream": "cpp",
-        "fstream": "cpp"
-    }
+        "fstream": "cpp",
+        "optional": "cpp",
+        "source_location": "cpp",
+        "variant": "cpp"
+    },
+    "cmake.buildDirectory" : "${workspaceFolder}/${buildKit}-build"
 }

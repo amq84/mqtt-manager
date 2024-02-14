@@ -1,8 +1,0 @@
-/home/abel/repositories/mqtt-manager/build/CMakeFiles/rebuild_cache.dir
-/home/abel/repositories/mqtt-manager/build/CMakeFiles/edit_cache.dir
-/home/abel/repositories/mqtt-manager/build/CMakeFiles/mqtt-manager.dir
-/home/abel/repositories/mqtt-manager/build/tool/CMakeFiles/rebuild_cache.dir
-/home/abel/repositories/mqtt-manager/build/tool/CMakeFiles/edit_cache.dir
-/home/abel/repositories/mqtt-manager/build/tool/CMakeFiles/build_deploy_debug.dir
-/home/abel/repositories/mqtt-manager/build/tool/CMakeFiles/build_deploy.dir
-/home/abel/repositories/mqtt-manager/build/tool/CMakeFiles/mqtt-manager-tool.dir
