@@ -17,8 +17,8 @@ namespace MQTTMANAGER
         /* data */
     public:
         virtual void OnConnect()=0;
-        virtual void OnDisconnect()=0;
-        virtual void OnDeviceRequest()=0;
+        virtual void OnDisconnect()=0;        
+        virtual void OnError()=0;
     };
         
 }

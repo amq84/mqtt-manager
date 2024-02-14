@@ -9,10 +9,18 @@
  * 
  */
 #include <stdio.h>
-#include "aws/crt/Api.h"
+#include <MQTTManager.hpp>
+
+using namespace MQTTMANAGER;
+
 
 int main(int argc, char const *argv[])
 {
-    
+    MQTTManager *man = new MQTTManager();
+    while (true)
+    {
+        
+    }
+    delete man;
     return 0;
 }

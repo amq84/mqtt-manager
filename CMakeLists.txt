@@ -2,12 +2,29 @@ cmake_minimum_required(VERSION 3.1)
 project(mqtt-manager)
 
 find_package(aws-crt-cpp REQUIRED)
+find_package(Boost REQUIRED
+            COMPONENTS json)
 
-set(${PROJECT_NAME}_SOURCES src/MQTTManager.cpp)
+set(${PROJECT_NAME}_SOURCES 
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/MQTTManager.cpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/include/MQTTManager.hpp
+                    ${Boost_INCLUDE_DIRS}/boost/json.hpp)
 
 add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_SOURCES})
 
-target_link_libraries(${PROJECT_NAME} AWS::aws-crt-cpp)
+target_link_libraries(${PROJECT_NAME} AWS::aws-crt-cpp ${Boost_LIBRARIES})
+
 
 target_include_directories(${PROJECT_NAME}
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+    PUBLIC ${Boost_INCLUDE_DIRS})
+
+
+
+get_directory_property(hasParent PARENT_DIRECTORY)
+if(hasParent)
+    message(STATUS "Has a parent scope.")
+else()
+    add_subdirectory(tool)
+endif()
