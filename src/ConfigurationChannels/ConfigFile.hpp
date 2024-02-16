@@ -11,22 +11,28 @@
 #pragma once
 
 #include <string>
+#include <fstream>
 #include <memory>
+#include <future>
 #include "IConfigChannel.hpp"
 
 namespace MQTTMANAGER
 {           
-    class ConfigFile: IConfigChannel 
+    class ConfigFile: public IConfigChannel 
     {
     private:
-    std::unique_ptr<std::string> _path;
-     
+    std::string _path;
+    void _read_file_content_handler();
+    int _read_file_content();
+    std::future<void> _fh;
+    std::future<int> _f;
+
     public:
 
-        ConfigFile(std::unique_ptr<std::string> path);
+        ConfigFile(std::string path);
         ~ConfigFile();
         
-        std::string read();
+        int read();
     };
 }
 

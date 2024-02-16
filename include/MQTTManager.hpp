@@ -20,12 +20,8 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <pwd.h>
-#include <boost/json.hpp>
-#include "boost/json/src.hpp"
-
+#include "IConfigCore.hpp"
 #include "IMQTTManagerInteraction.hpp"
-#include "MQTTManagerCfg.hpp"
-#include "ConfigFile.hpp"
 
 #define CONFIGURATION_FILE = "~/.config/mqtt-manager/mqtt-manager-configurator.json";
 #define CONFIGURATION_FILE_MAX_SIZE_BYTES = 4096;
@@ -44,14 +40,11 @@ namespace MQTTMANAGER
         Aws::Crt::String _vendor;
         Aws::Crt::String _uuid;
 
-        weak_ptr<ifstream> _cfgfile;
         future<int> _run;
-        unique_ptr<IConfigChannel> channel;
-        bool _parse_cfgfile();
     protected:
         int run();
     public:
-        MQTTManager();
+        MQTTManager(IConfigCore *);
         ~MQTTManager();
         void connect();
         void disconnect();

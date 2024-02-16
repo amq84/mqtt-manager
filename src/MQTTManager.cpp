@@ -11,9 +11,8 @@
 #include "MQTTManager.hpp"
 
 using namespace MQTTMANAGER;
-using namespace boost::json;
 
-MQTTManager::MQTTManager()
+MQTTManager::MQTTManager(IConfigCore *)
 {
     _run = std::async(std::launch::async, &MQTTManager::run, this);
     
@@ -24,12 +23,7 @@ MQTTManager::~MQTTManager()
 }
 
 int MQTTManager::run()
-{    
-    while (!_parse_cfgfile())
-    {
-        std::this_thread::sleep_for(2000ms);
-    }
-
+{ 
     while(true)
     {
         std::this_thread::sleep_for(2000ms);
@@ -46,6 +40,7 @@ void MQTTManager::disconnect()
     //trigger disconnection
 }
 
+/*
 bool MQTTManager::_parse_cfgfile()
 {
     
@@ -82,3 +77,4 @@ bool MQTTManager::_parse_cfgfile()
     }
     
 }
+*/

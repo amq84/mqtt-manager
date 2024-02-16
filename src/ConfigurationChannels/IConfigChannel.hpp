@@ -8,13 +8,17 @@
  * @copyright Copyright (c) 2024
  * 
  */
+#pragma once
+
 #include <string>
+#include <functional>
 
 namespace MQTTMANAGER
 {
     class IConfigChannel
     {
     public:
-        virtual std::string read()=0;
+        std::function<void(std::string)> OnRead;
+        virtual int read()=0;
     };
 }

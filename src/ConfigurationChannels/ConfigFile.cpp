@@ -21,9 +21,10 @@
 
 using namespace MQTTMANAGER;
 
-ConfigFile::ConfigFile(std::unique_ptr<std::string> path):
-_path(std::move(path))
+ConfigFile::ConfigFile(std::string path):
+_path(path)
 {
+
 }
 
 ConfigFile::~ConfigFile()
@@ -31,15 +32,24 @@ ConfigFile::~ConfigFile()
 
 }
 
-std::string ConfigFile::read()
+int ConfigFile::read()
 {
-    std::ifstream ifs(_path.get()->c_str());
+    _f = std::async(std::launch::async, &ConfigFile::_read_file_content, this);
+    return 1;
+}
+
+int ConfigFile::_read_file_content()
+{
+    std::ifstream ifs(_path.c_str());
     if(ifs)
     {
-        std::string data((std::istreambuf_iterator<char>(ifs)), std::istreambuf_iterator<char>());
-        return data;
-    }else
+        std::string file_content((std::istreambuf_iterator<char>(ifs)),
+                 std::istreambuf_iterator<char>());
+        OnRead(file_content);
+        return 0;
+    }
+    else
     {
-        return std::string{};
+        return 1;
     }
 }
