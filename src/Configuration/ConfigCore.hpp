@@ -10,6 +10,7 @@
  */
 #pragma once
 
+#include <condition_variable>
 #include "IConfigCore.hpp"
 #include "IConfigChannel.hpp"
 
@@ -21,20 +22,34 @@ private:
     IConfigChannel * _channel;
     void channelReadHandler(std::string data)
     {
-
+        if(_reading_flag)
+        {
+            _data.clear();
+            _data = data;
+            //_fParseData = std::async(std::launch::async, &ConfigFile::_parse, this);
+        }
     }
+
+    bool _reading_flag;
+    std::string _data;
+    
 public:
     ConfigCore(IConfigChannel * channel):
     _channel(channel)
     {
         _channel->OnRead = std::bind(&ConfigCore::channelReadHandler, this, std::placeholders::_1);
-        _channel->read();
     }
     ~ConfigCore(){}
-    
-    std::map<std::string, std::string> get()
-    {
-        return std::map<std::string, std::string>{};
-    }
+
+    void start();
+    void stop();
 };
+}
+
+void MQTTMANAGER::ConfigCore::start()
+{
+}
+
+void MQTTMANAGER::ConfigCore::stop()
+{
 }

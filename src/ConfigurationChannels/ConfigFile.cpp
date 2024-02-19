@@ -21,10 +21,16 @@
 
 using namespace MQTTMANAGER;
 
-ConfigFile::ConfigFile(std::string path):
-_path(path)
+ConfigFile::ConfigFile(std::string path, bool home):
+_read_guard(false)
 {
-
+    if(home)
+    {
+        _path = std::string(getpwuid(getuid())->pw_dir) + path;
+    }else
+    {
+        _path = path;
+    }
 }
 
 ConfigFile::~ConfigFile()
@@ -34,22 +40,27 @@ ConfigFile::~ConfigFile()
 
 int ConfigFile::read()
 {
-    _f = std::async(std::launch::async, &ConfigFile::_read_file_content, this);
-    return 1;
+
+    if(!_read_guard)
+    {
+        _read_guard = true;
+        _f = std::async(std::launch::async, &ConfigFile::_read_file_content, this);
+        return 0;
+    }else
+    {
+        return -1;
+    }
 }
 
-int ConfigFile::_read_file_content()
+void ConfigFile::_read_file_content()
 {
-    std::ifstream ifs(_path.c_str());
-    if(ifs)
-    {
-        std::string file_content((std::istreambuf_iterator<char>(ifs)),
-                 std::istreambuf_iterator<char>());
-        OnRead(file_content);
-        return 0;
-    }
-    else
-    {
-        return 1;
-    }
+        std::ifstream ifs(_path.c_str());
+        if(ifs)
+        {
+            std::string file_content((std::istreambuf_iterator<char>(ifs)),
+                    std::istreambuf_iterator<char>());
+            // Protect function call
+            OnRead(file_content);            
+        }
+        _read_guard = false;
 }

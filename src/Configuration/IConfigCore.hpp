@@ -17,6 +17,7 @@
 class IConfigCore
 {
 public:
-    std::function<void(IConfigCore *)> OnRead;
-    virtual std::map<std::string, std::string> get()=0;
+    std::function<void(std::map<std::string, std::string>)> OnCfgAvailable;
+    virtual void start()=0;
+    virtual void stop()=0;
 };

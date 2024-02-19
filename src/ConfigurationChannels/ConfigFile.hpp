@@ -22,16 +22,19 @@ namespace MQTTMANAGER
     {
     private:
     std::string _path;
-    void _read_file_content_handler();
-    int _read_file_content();
-    std::future<void> _fh;
-    std::future<int> _f;
-
+    bool _read_guard;
+    void _read_file_content();
+    std::future<void> _f;
     public:
 
-        ConfigFile(std::string path);
+        ConfigFile(std::string path, bool home);
         ~ConfigFile();
-        
+        /**
+         * @brief Read from channel
+         * 
+         * @return int :    0 - No Error, 
+         *                  -1 - Unable to read 
+         */
         int read();
     };
 }

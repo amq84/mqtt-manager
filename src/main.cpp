@@ -15,14 +15,11 @@
 
 using namespace MQTTMANAGER;
 
-void onConfigurationReady(IConfigCore *cfg);
-
 int main(int argc, char const *argv[])
 {
-    std::string path{""};
-    ConfigFile file(path);
+    std::string path{"/.config/mqtt-manager/mqtt-manager.json"};
+    ConfigFile file(path, true);
     ConfigCore cfg(&file);
-    cfg.OnRead = onConfigurationReady;
     MQTTManager *man = new MQTTManager(&cfg);
     while (true)
     {
@@ -30,9 +27,4 @@ int main(int argc, char const *argv[])
     }
     delete man;
     return 0;
-}
-
-void onConfigurationReady(IConfigCore *cfg)
-{
-
 }

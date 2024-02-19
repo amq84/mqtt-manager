@@ -24,6 +24,7 @@ MQTTManager::~MQTTManager()
 
 int MQTTManager::run()
 { 
+    
     while(true)
     {
         std::this_thread::sleep_for(2000ms);
