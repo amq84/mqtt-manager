@@ -14,10 +14,13 @@ endif()
 set(${PROJECT_NAME}_SOURCES 
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/MQTTManager.cpp
-                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/ConfigCore.hpp
-                    ${CMAKE_CURRENT_SOURCE_DIR}/src/ConfigurationChannels/ConfigFile.cpp
-                    ${CMAKE_CURRENT_SOURCE_DIR}/src/ConfigurationChannels/ConfigFile.hpp
-                    ${CMAKE_CURRENT_SOURCE_DIR}/src/ConfigurationChannels/IConfigChannel.hpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Core/ConfigCore.hpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel/ConfigFile.cpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel/ConfigFile.hpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel/IConfigChannel.hpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser/ConfigJsonParser.cpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser/ConfigJsonParser.hpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser/IConfigParser.hpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/include/MQTTManager.hpp)
 
 add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCES})
