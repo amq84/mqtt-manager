@@ -30,8 +30,9 @@ target_link_libraries(${PROJECT_NAME} AWS::aws-crt-cpp ${Boost_LIBRARIES})
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/ConfigurationChannels
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Core
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
     PUBLIC ${Boost_INCLUDE_DIRS})
 

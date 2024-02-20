@@ -13,12 +13,10 @@
 #include <string>
 #include <functional>
 
-namespace MQTTMANAGER
+
+class IConfigChannel
 {
-    class IConfigChannel
-    {
-    public:
-        std::function<void(std::string)> OnRead;
-        virtual int read()=0;
-    };
-}
+public:
+    std::function<void(std::string)> OnRead;
+    virtual int read()=0;
+};

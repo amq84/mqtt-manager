@@ -18,6 +18,4 @@ class IConfigCore
 {
 public:
     std::function<void(std::map<std::string, std::string>)> OnCfgAvailable;
-    virtual void start()=0;
-    virtual void stop()=0;
 };

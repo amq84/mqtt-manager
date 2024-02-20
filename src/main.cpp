@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include "MQTTManager.hpp"
 #include "ConfigCore.hpp"
+#include "ConfigJsonParser.hpp"
 #include "ConfigFile.hpp"
 
 using namespace MQTTMANAGER;
@@ -19,12 +20,13 @@ int main(int argc, char const *argv[])
 {
     std::string path{"/.config/mqtt-manager/mqtt-manager.json"};
     ConfigFile file(path, true);
-    ConfigCore cfg(&file);
-    MQTTManager *man = new MQTTManager(&cfg);
+    //ConfigJsonParser parser();
+    //ConfigCore cfg(&file, &parser);
+    //MQTTManager *man = new MQTTManager(&cfg);
     while (true)
     {
         
     }
-    delete man;
+    //delete man;
     return 0;
 }
