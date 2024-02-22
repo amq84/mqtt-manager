@@ -10,7 +10,6 @@
  */
 #include "MQTTManager.hpp"
 
-using namespace MQTTMANAGER;
 
 MQTTManager::MQTTManager(IConfigCore *)
 {

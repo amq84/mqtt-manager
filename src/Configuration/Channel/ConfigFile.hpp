@@ -15,29 +15,16 @@
 #include <memory>
 #include <future>
 #include "IConfigChannel.hpp"
-
-namespace MQTTMANAGER
-{           
-    class ConfigFile: public IConfigChannel 
-    {
-    private:
+        
+class ConfigFile: public IConfigChannel 
+{
+private:
     std::string _path;
-    bool _read_guard;
-    void _read_file_content();
-    std::future<void> _f;
-    public:
+public:
 
-        ConfigFile(std::string path, bool home);
-        ~ConfigFile();
-        /**
-         * @brief Read from channel
-         * 
-         * @return int :    0 - No Error, 
-         *                  -1 - Unable to read 
-         */
-        int read();
-    };
-}
+    ConfigFile(std::string path, bool home);
+    ~ConfigFile();
 
-
+    int read(std::string *);
+};
 

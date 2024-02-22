@@ -17,6 +17,10 @@
 class IConfigChannel
 {
 public:
-    std::function<void(std::string)> OnRead;
-    virtual int read()=0;
+    /**
+     * @brief read from configuration channel
+     * 
+     * @return int error code < 0
+     */
+    virtual int read(std::string *)=0;
 };

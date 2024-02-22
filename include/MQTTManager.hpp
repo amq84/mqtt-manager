@@ -28,27 +28,23 @@
 
 using namespace std;
 
-namespace MQTTMANAGER
+class MQTTManager
 {
-    class MQTTManager
-    {
-    private:
-        Aws::Crt::String _endpoint;
-        Aws::Crt::String _port;
-        Aws::Crt::String _X509Certificate;
-        Aws::Crt::String _privateKey;
-        Aws::Crt::String _vendor;
-        Aws::Crt::String _uuid;
+private:
+    Aws::Crt::String _endpoint;
+    Aws::Crt::String _port;
+    Aws::Crt::String _X509Certificate;
+    Aws::Crt::String _privateKey;
+    Aws::Crt::String _vendor;
+    Aws::Crt::String _uuid;
 
-        future<int> _run;
-    protected:
-        int run();
-    public:
-        MQTTManager(IConfigCore *);
-        ~MQTTManager();
-        void connect();
-        void disconnect();
+    future<int> _run;
+protected:
+    int run();
+public:
+    MQTTManager(IConfigCore *);
+    ~MQTTManager();
+    void connect();
+    void disconnect();
 
-    };
-        
-}
+};

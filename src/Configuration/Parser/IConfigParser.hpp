@@ -14,6 +14,7 @@
 class IConfigParser
 {
 public:
-    virtual int parse(std::string, std::map<std::string,std::string> *)=0;
+    template<struct T>
+    virtual int parse(std::string, T *)=0;
 };
 

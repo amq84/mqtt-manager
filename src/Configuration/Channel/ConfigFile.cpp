@@ -19,10 +19,7 @@
 
 #include "ConfigFile.hpp"
 
-using namespace MQTTMANAGER;
-
-ConfigFile::ConfigFile(std::string path, bool home):
-_read_guard(false)
+ConfigFile::ConfigFile(std::string path, bool home)
 {
     if(home)
     {
@@ -38,29 +35,23 @@ ConfigFile::~ConfigFile()
 
 }
 
-int ConfigFile::read()
+int ConfigFile::read(std::string * data)
 {
-
-    if(!_read_guard)
+    std::ifstream ifs(_path.c_str());
+    if(ifs)
     {
-        _read_guard = true;
-        _f = std::async(std::launch::async, &ConfigFile::_read_file_content, this);
-        return 0;
+        std::string file_content((std::istreambuf_iterator<char>(ifs)),
+                std::istreambuf_iterator<char>());
+        if(data != nullptr)
+        {
+            *data = file_content;
+            return 0;  
+        }else
+        {
+            return -1;
+        }               
     }else
     {
         return -1;
     }
-}
-
-void ConfigFile::_read_file_content()
-{
-        std::ifstream ifs(_path.c_str());
-        if(ifs)
-        {
-            std::string file_content((std::istreambuf_iterator<char>(ifs)),
-                    std::istreambuf_iterator<char>());
-            // Protect function call
-            OnRead(file_content);            
-        }
-        _read_guard = false;
 }
