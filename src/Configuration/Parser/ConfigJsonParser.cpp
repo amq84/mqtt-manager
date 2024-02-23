@@ -10,7 +10,7 @@
  */
 #include "ConfigJsonParser.hpp"
 
-int ConfigJsonParser::parse(std::string input, std::map<std::string,std::string> *output)
+int ConfigJsonParser::parse(std::string input, ConfigData *output)
 {
 
     return 1;

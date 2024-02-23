@@ -33,6 +33,7 @@ target_include_directories(${PROJECT_NAME}
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Core
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Data
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
     PUBLIC ${Boost_INCLUDE_DIRS})
 

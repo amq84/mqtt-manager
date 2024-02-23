@@ -11,10 +11,12 @@
 #pragma once
 #include <string>
 #include <map>
+#include "ConfigData.hpp"
+
 class IConfigParser
 {
 public:
-    template<struct T>
-    virtual int parse(std::string, T *)=0;
+    
+    virtual int parse(std::string, ConfigData *)=0;
 };
 

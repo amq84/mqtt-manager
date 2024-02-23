@@ -15,6 +15,6 @@ class ConfigJsonParser: public IConfigParser
 private:
     /* data */
 public:
-    template<struct T>
-    int parse(std::string input, std::map<std::string,std::string> *output);
+    
+    int parse(std::string input, ConfigData *output);
 };
