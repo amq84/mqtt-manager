@@ -22,7 +22,7 @@ int ConfigJsonParser::parse(std::string input, ConfigData *output)
     {
         return -1;
     }
-    if(_value_to_int(&output->port, obj.at("port")))
+    if(!_value_to_int(&output->port, obj.at("port")))
     {
         return -1;
     }

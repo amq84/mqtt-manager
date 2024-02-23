@@ -19,15 +19,23 @@ _parser(parser)
     _workerTh = std::thread(&ConfigCore::_worker, this);
 }
 
-int ConfigCore::_worker()
+void ConfigCore::_worker()
 {
     while(true)
     {
         if(OnCfgAvailable)
         {
-            
+            std::string channelString;
+            if(_channel->read(&channelString)==0)
+            {
+                ConfigData cfgdata;
+                if(_parser->parse(channelString, &cfgdata)==0)
+                {
+                    OnCfgAvailable(cfgdata);
+                }
+            }
+
         }
         std::this_thread::sleep_for(1000ms);
     }
-    return 1;
 }

@@ -25,6 +25,6 @@ private:
     
 public:
     ConfigCore(IConfigChannel * channel, IConfigParser * parser);
-    ~ConfigCore();
-    int _worker();
+    ~ConfigCore(){}
+    void _worker();
 };
