@@ -12,10 +12,10 @@
 
 #include <map>
 #include <functional>
-
+#include "ConfigData.hpp"
 
 class IConfigCore
 {
 public:
-    std::function<void(std::map<std::string, std::string>)> OnCfgAvailable;
+    std::function<void(ConfigData)> OnCfgAvailable;
 };

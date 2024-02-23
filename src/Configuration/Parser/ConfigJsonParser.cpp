@@ -12,6 +12,6 @@
 
 int ConfigJsonParser::parse(std::string input, ConfigData *output)
 {
-
+    
     return 1;
 }

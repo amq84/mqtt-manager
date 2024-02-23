@@ -9,15 +9,17 @@
  * 
  */
 #include "ConfigCore.hpp"
+#include <chrono>
+using namespace std::chrono_literals;
 
-ConfigCore(IConfigChannel * channel, IConfigParser * parser):
+ConfigCore::ConfigCore(IConfigChannel * channel, IConfigParser * parser):
 _channel(channel),
 _parser(parser)
 {
     _workerTh = std::thread(&ConfigCore::_worker, this);
 }
 
-void ConfigCore::_worker()
+int ConfigCore::_worker()
 {
     while(true)
     {
@@ -25,5 +27,7 @@ void ConfigCore::_worker()
         {
             
         }
+        std::this_thread::sleep_for(1000ms);
     }
+    return 1;
 }

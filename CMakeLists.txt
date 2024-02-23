@@ -14,7 +14,7 @@ endif()
 set(${PROJECT_NAME}_SOURCES 
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/MQTTManager.cpp
-                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Core/ConfigCore.hpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Core/ConfigCore.cpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel/ConfigFile.cpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel/ConfigFile.hpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel/IConfigChannel.hpp

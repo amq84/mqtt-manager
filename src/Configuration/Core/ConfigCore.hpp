@@ -22,9 +22,9 @@ private:
     IConfigChannel * _channel;
     IConfigParser * _parser;
     std::thread _workerTh;
-    void _worker();
+    
 public:
     ConfigCore(IConfigChannel * channel, IConfigParser * parser);
     ~ConfigCore();
-    
+    int _worker();
 };
