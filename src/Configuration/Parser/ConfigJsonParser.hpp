@@ -10,10 +10,13 @@
  */
 #pragma once
 #include "IConfigParser.hpp"
+#include <boost/json.hpp>
+
 class ConfigJsonParser: public IConfigParser
 {
 private:
-    /* data */
+    bool _value_to_string(std::string *, boost::json::value);
+    bool _value_to_int(int *, boost::json::value);
 public:
     
     int parse(std::string input, ConfigData *output);
