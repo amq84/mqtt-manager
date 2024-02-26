@@ -6,6 +6,12 @@
         "cmakeSettings": {"REMOTE_DEBUG": false}
     },
     {
+        "name": "samad27",
+        "toolchainFile": "/opt/poky/4.0.13/sysroots/x86_64-pokysdk-linux/usr/share/cmake/core2-64-poky-linux-toolchain.cmake",
+        "environmentSetupScript" : "/opt/poky/4.0.13/environment-setup-core2-64-poky-linux",
+        "cmakeSettings": {"REMOTE_DEBUG": false}
+    },
+    {
         "name" : "ubuntu-workstation",
         "compilers": {
             "C": "/usr/bin/gcc",

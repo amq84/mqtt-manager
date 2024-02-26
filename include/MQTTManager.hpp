@@ -16,31 +16,30 @@
 #include <thread>
 #include <future>
 #include <fstream>
-#include <chrono>
-#include <unistd.h>
-#include <sys/types.h>
-#include <pwd.h>
 #include "IConfigCore.hpp"
 #include "IMQTTManagerInteraction.hpp"
+#include <aws/crt/Api.h>
+#include <aws/crt/UUID.h>
+#include <aws/crt/mqtt/Mqtt5Packets.h>
+#include <aws/iot/Mqtt5Client.h>
 
-#define CONFIGURATION_FILE = "~/.config/mqtt-manager/mqtt-manager-configurator.json";
 #define CONFIGURATION_FILE_MAX_SIZE_BYTES = 4096;
-
+using namespace Aws::Crt;
 using namespace std;
 
 class MQTTManager
 {
 private:
-    Aws::Crt::String _endpoint;
-    Aws::Crt::String _port;
-    Aws::Crt::String _X509Certificate;
-    Aws::Crt::String _privateKey;
-    Aws::Crt::String _vendor;
-    Aws::Crt::String _uuid;
-
-    future<int> _run;
-protected:
-    int run();
+    ConfigData _cfgdata;
+    ApiHandle apiHandle;
+    IConfigCore * _cfg;
+    std::thread _Th;
+    std::shared_ptr<Aws::Crt::Mqtt5::Mqtt5Client> _client;
+    void run();
+    void OnConfigAvailableHandler(ConfigData);
+    void OnConnectHandler(const Mqtt5::OnConnectionSuccessEventData &eventData);
+    void OnDisconnectHandler(const Mqtt5::OnDisconnectionEventData &eventData);
+    void OnStoppedHandler(const Mqtt5::OnStoppedEventData &);
 public:
     MQTTManager(IConfigCore *);
     ~MQTTManager();

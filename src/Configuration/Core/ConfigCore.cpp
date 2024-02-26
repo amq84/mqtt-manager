@@ -31,10 +31,10 @@ void ConfigCore::_worker()
                 ConfigData cfgdata;
                 if(_parser->parse(channelString, &cfgdata)==0)
                 {
-                    OnCfgAvailable(cfgdata);
+                    if(OnCfgAvailable)
+                        OnCfgAvailable(cfgdata);
                 }
             }
-
         }
         std::this_thread::sleep_for(1000ms);
     }
