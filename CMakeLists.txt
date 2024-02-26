@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 project(mqtt-manager)
 
 find_package(aws-crt-cpp REQUIRED)
-find_package(Boost REQUIRED)
+find_package(Boost 1.78.0 REQUIRED)
 
 if(DEFINED REMOTE_DEBUG)
     message("REMOTE_DEBUG is define value is ${REMOTE_DEBUG}")
