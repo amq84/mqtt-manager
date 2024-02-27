@@ -16,5 +16,5 @@ class IPublisher
 public:
     virtual void publish_configuration(std::string, std::string)=0;
     virtual void publish_event(std::string, std::string)=0;
-    virtual void publish_response(std::string, std::string)=0;
+    virtual void publish_response(std::string, std::string, std::string)=0;
 };

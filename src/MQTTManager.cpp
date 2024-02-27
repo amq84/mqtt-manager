@@ -23,48 +23,51 @@ MQTTManager::~MQTTManager()
 
 void MQTTManager::run()
 { 
-    apiHandle.InitializeLogging(Aws::Crt::LogLevel::Info, stderr);
+    if(_cfgdata.vendor.compare(std::string("aws")) == 0)
+    {
+        apiHandle.InitializeLogging(Aws::Crt::LogLevel::Info, stderr);
     
-    Aws::Iot::Mqtt5ClientBuilder *builder = Aws::Iot::Mqtt5ClientBuilder::NewMqtt5ClientBuilderWithMtlsFromPath(
-            _cfgdata.endpoint.c_str(),
-            _cfgdata.x509certificate.c_str(),
-            _cfgdata.privatekey.c_str()
-    );
-    // Check if the builder setup correctly.
-    if (builder == nullptr)
-    {
-        printf(
-            "Failed to setup mqtt5 client builder with error code %d: %s", LastError(), ErrorDebugString(LastError()));
-    }else
-    {
-        printf("Builder created succesfully! \n\r");
+        Aws::Iot::Mqtt5ClientBuilder *builder = Aws::Iot::Mqtt5ClientBuilder::NewMqtt5ClientBuilderWithMtlsFromPath(
+                _cfgdata.endpoint.c_str(),
+                _cfgdata.x509certificate.c_str(),
+                _cfgdata.privatekey.c_str()
+        );
+        // Check if the builder setup correctly.
+        if (builder == nullptr)
+        {
+            printf(
+                "Failed to setup mqtt5 client builder with error code %d: %s", LastError(), ErrorDebugString(LastError()));
+        }else
+        {
+            printf("Builder created succesfully! \n\r");
+        }
+        std::shared_ptr<Mqtt5::ConnectPacket> connectOptions = std::make_shared<Mqtt5::ConnectPacket>();
+        connectOptions->WithClientId(String(_cfgdata.uuid.c_str()));
+        connectOptions->WithKeepAliveIntervalSec(60);
+        builder->WithConnectOptions(connectOptions);
+        builder->WithClientConnectionSuccessCallback (std::bind(&MQTTManager::OnConnectHandler,this,_1));
+        builder->WithClientDisconnectionCallback (std::bind(&MQTTManager::OnDisconnectHandler,this,_1));
+        builder->WithClientStoppedCallback (std::bind(&MQTTManager::OnStoppedHandler,this,_1));
+        _client = builder->Build();
+        if (_client == nullptr)
+        {
+            fprintf(
+                stdout, "Failed to Init Mqtt5Client with error code %d: %s", LastError(), ErrorDebugString(LastError()));
+        }else
+        {
+            printf("Succesfully created Mqtt5 client \n\r");
+        }
+        _publisher = new AwsPublisher(_client, _cfgdata.uuid);
+        //_receiver = new AwsReceiver(_client, _cfgdata.uuid);
+        _client->Start();
     }
-    std::shared_ptr<Mqtt5::ConnectPacket> connectOptions = std::make_shared<Mqtt5::ConnectPacket>();
-    connectOptions->WithClientId(String(_cfgdata.uuid.c_str()));
-    connectOptions->WithKeepAliveIntervalSec(60);
-    builder->WithConnectOptions(connectOptions);
-    builder->WithClientConnectionSuccessCallback (std::bind(&MQTTManager::OnConnectHandler,this,_1));
-    builder->WithClientDisconnectionCallback (std::bind(&MQTTManager::OnDisconnectHandler,this,_1));
-    builder->WithClientStoppedCallback (std::bind(&MQTTManager::OnStoppedHandler,this,_1));
-    _client = builder->Build();
-    if (_client == nullptr)
-    {
-        fprintf(
-            stdout, "Failed to Init Mqtt5Client with error code %d: %s", LastError(), ErrorDebugString(LastError()));
-    }else
-    {
-        printf("Succesfully created Mqtt5 client \n\r");
-    }
-    _client->Start();
-    int publishedCount=0;
+    
+
     while(true)
     {
-        String message = "\"" + String("Flowmeter") + std::to_string(publishedCount + 1).c_str() + "\"";
-        ByteCursor payload = ByteCursorFromString(message);
-        std::shared_ptr<Mqtt5::PublishPacket> publish = std::make_shared<Mqtt5::PublishPacket>(
-            "Flowmeter", payload, Mqtt5::QOS::AWS_MQTT5_QOS_AT_LEAST_ONCE);
-        _client->Publish(publish);
-        publishedCount++;
+        _publisher->publish_configuration("module1", "{value:pair}");
+        _publisher->publish_event("module1", "{value:pair}");
+        _publisher->publish_response("module1", "commandx", "{value:pair}");
         std::this_thread::sleep_for(10000ms);
     }
 }
@@ -129,7 +132,7 @@ void MQTTManager::OnConnectHandler(const Mqtt5::OnConnectionSuccessEventData &ev
     _print_OnConnectionSuccessEventData(eventData);
     // Capture relevant information, if needed
     // Start serial-server
-    
+
 }
 
 void MQTTManager::OnDisconnectHandler(const Mqtt5::OnDisconnectionEventData &eventData)

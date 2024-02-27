@@ -22,6 +22,7 @@
 #include <aws/crt/UUID.h>
 #include <aws/crt/mqtt/Mqtt5Packets.h>
 #include <aws/iot/Mqtt5Client.h>
+#include "AwsPublisher.hpp"
 
 #define CONFIGURATION_FILE_MAX_SIZE_BYTES = 4096;
 using namespace Aws::Crt;
@@ -35,6 +36,8 @@ private:
     IConfigCore * _cfg;
     std::thread _Th;
     std::shared_ptr<Aws::Crt::Mqtt5::Mqtt5Client> _client;
+    IPublisher * _publisher;
+
     void run();
     void OnConfigAvailableHandler(ConfigData);
     void OnConnectHandler(const Mqtt5::OnConnectionSuccessEventData &eventData);
@@ -45,7 +48,4 @@ private:
 public:
     MQTTManager(IConfigCore *);
     ~MQTTManager();
-    void connect();
-    void disconnect();
-
 };

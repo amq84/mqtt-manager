@@ -10,7 +10,12 @@
  */
 #pragma once
 #include "IPublisher.hpp"
+#include <aws/crt/Api.h>
+#include <aws/crt/UUID.h>
+#include <aws/crt/mqtt/Mqtt5Packets.h>
 #include <aws/iot/Mqtt5Client.h>
+
+using namespace Aws::Crt;
 
 class AwsPublisher: public IPublisher
 {
@@ -22,5 +27,5 @@ public:
     ~AwsPublisher();
     void publish_configuration(std::string, std::string);
     void publish_event(std::string, std::string);
-    void publish_response(std::string, std::string);
+    void publish_response(std::string, std::string, std::string);
 };
