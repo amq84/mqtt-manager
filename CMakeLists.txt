@@ -21,6 +21,7 @@ set(${PROJECT_NAME}_SOURCES
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser/ConfigJsonParser.cpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser/ConfigJsonParser.hpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser/IConfigParser.hpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/src/Publisher/AwsPublisher.cpp
                     ${CMAKE_CURRENT_SOURCE_DIR}/include/MQTTManager.hpp)
 
 add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCES})
@@ -34,6 +35,7 @@ target_include_directories(${PROJECT_NAME}
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Parser
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Channel
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Configuration/Data
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/Publisher
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
     PUBLIC ${Boost_INCLUDE_DIRS})
 

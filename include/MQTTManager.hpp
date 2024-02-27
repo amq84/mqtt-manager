@@ -40,6 +40,8 @@ private:
     void OnConnectHandler(const Mqtt5::OnConnectionSuccessEventData &eventData);
     void OnDisconnectHandler(const Mqtt5::OnDisconnectionEventData &eventData);
     void OnStoppedHandler(const Mqtt5::OnStoppedEventData &);
+
+    void _print_OnConnectionSuccessEventData(const Mqtt5::OnConnectionSuccessEventData &eventData);
 public:
     MQTTManager(IConfigCore *);
     ~MQTTManager();

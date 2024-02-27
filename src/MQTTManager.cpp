@@ -23,7 +23,8 @@ MQTTManager::~MQTTManager()
 
 void MQTTManager::run()
 { 
-
+    apiHandle.InitializeLogging(Aws::Crt::LogLevel::Info, stderr);
+    
     Aws::Iot::Mqtt5ClientBuilder *builder = Aws::Iot::Mqtt5ClientBuilder::NewMqtt5ClientBuilderWithMtlsFromPath(
             _cfgdata.endpoint.c_str(),
             _cfgdata.x509certificate.c_str(),
@@ -40,8 +41,8 @@ void MQTTManager::run()
     }
     std::shared_ptr<Mqtt5::ConnectPacket> connectOptions = std::make_shared<Mqtt5::ConnectPacket>();
     connectOptions->WithClientId(String(_cfgdata.uuid.c_str()));
+    connectOptions->WithKeepAliveIntervalSec(60);
     builder->WithConnectOptions(connectOptions);
-
     builder->WithClientConnectionSuccessCallback (std::bind(&MQTTManager::OnConnectHandler,this,_1));
     builder->WithClientDisconnectionCallback (std::bind(&MQTTManager::OnDisconnectHandler,this,_1));
     builder->WithClientStoppedCallback (std::bind(&MQTTManager::OnStoppedHandler,this,_1));
@@ -55,9 +56,16 @@ void MQTTManager::run()
         printf("Succesfully created Mqtt5 client \n\r");
     }
     _client->Start();
+    int publishedCount=0;
     while(true)
     {
-        std::this_thread::sleep_for(2000ms);
+        String message = "\"" + String("Flowmeter") + std::to_string(publishedCount + 1).c_str() + "\"";
+        ByteCursor payload = ByteCursorFromString(message);
+        std::shared_ptr<Mqtt5::PublishPacket> publish = std::make_shared<Mqtt5::PublishPacket>(
+            "Flowmeter", payload, Mqtt5::QOS::AWS_MQTT5_QOS_AT_LEAST_ONCE);
+        _client->Publish(publish);
+        publishedCount++;
+        std::this_thread::sleep_for(10000ms);
     }
 }
 
@@ -73,6 +81,7 @@ void MQTTManager::OnConfigAvailableHandler(ConfigData cfg)
     _cfgdata = cfg;
     _cfg->OnCfgAvailable = nullptr;
     _Th = std::thread(&MQTTManager::run, this);
+    printf("===================================\n\r");
 }
 
 void MQTTManager::connect()
@@ -84,57 +93,62 @@ void MQTTManager::disconnect()
 {
     //trigger disconnection
 }
+void MQTTManager::_print_OnConnectionSuccessEventData(const Mqtt5::OnConnectionSuccessEventData &eventData)
+{
+    if(eventData.connAckPacket != nullptr)
+    {
+        if(eventData.connAckPacket->getReasonString().has_value())
+        {
+            printf("Connect reason: %s \n\r", eventData.connAckPacket->getReasonString().value().c_str());
+        }
+        if(eventData.connAckPacket->getAssignedClientIdentifier().has_value())
+        {
+            printf("AssignedClientIdentifier : %s \n\r", eventData.connAckPacket->getAssignedClientIdentifier().value().c_str());
+        }
+        
+        if(!eventData.connAckPacket->getUserProperty().empty())
+        {
+            for(auto prop: eventData.connAckPacket->getUserProperty())
+            {
+                printf("Name: %s - Value: %s \n\r", prop.getName().c_str(), prop.getValue().c_str());
+            }
+            
+        }
+    }
+    if(eventData.negotiatedSettings != nullptr)
+    {
+        printf("Server Keep Alive: %i \n\r", eventData.negotiatedSettings->getServerKeepAliveSec());
+        printf("Maximum Packet size: %i \n\r", eventData.negotiatedSettings->getMaximumPacketSizeToServer());
+        printf("Wild card subscription enabled: %s \n\r", eventData.negotiatedSettings->getWildcardSubscriptionsAvailable()? "true" : "false");
+    }
+}
 
 void MQTTManager::OnConnectHandler(const Mqtt5::OnConnectionSuccessEventData &eventData)
 {
-    printf("Connected!\n\r");
-
+    printf("Device connected!\n\r");
+    _print_OnConnectionSuccessEventData(eventData);
+    // Capture relevant information, if needed
+    // Start serial-server
+    
 }
 
 void MQTTManager::OnDisconnectHandler(const Mqtt5::OnDisconnectionEventData &eventData)
 {
-    printf("DisConnected!\n\r");
+    printf("DisConnected with reason code: %i \n\r", eventData.errorCode);
+    if(eventData.disconnectPacket != nullptr)
+    {
+        if(eventData.disconnectPacket->getReasonString().has_value())
+        {
+            //printf("Disconnect reason:", eventData.disconnectPacket->getReasonString().value().c_str());
+        }        
+    }
+    // Re-Start the client
+    _client->Start();
 }
 
 void MQTTManager::OnStoppedHandler(const Mqtt5::OnStoppedEventData &)
 {
     printf("Stopped!\n\r");
+    // Currently not being used
 }
-/*
-bool MQTTManager::_parse_cfgfile()
-{
-    
-    std::string homedir(getpwuid(getuid())->pw_dir);
-    std::string relativeLocation("/.config/mqtt-manager/");
-    std::string fileName("mqtt-manager-configurator.json");
 
-    std::ifstream ifs{(homedir+relativeLocation+fileName)};
-    if(ifs)
-    {
-        std::string data((std::istreambuf_iterator<char>(ifs)), std::istreambuf_iterator<char>());
-        value dataJson = parse(data.c_str());
-        kind k = dataJson.kind();
-        auto const& obj = dataJson.get_object();
-        if(! obj.empty())
-        {
-            auto it = obj.begin();
-            for(;;)
-            {
-                
-                //std::cout << *indent << json::serialize(it->key()) << " : ";
-                //pretty_print(os, it->value(), indent);
-                if(++it == obj.end())
-                    break;
-                //os << ",\n";
-            }
-        }
-
-        return true;
-    }else
-    {
-        printf("File not found! \n\r");
-        return false;
-    }
-    
-}
-*/
